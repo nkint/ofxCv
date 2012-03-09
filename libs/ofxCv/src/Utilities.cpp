@@ -63,6 +63,16 @@ namespace ofxCv {
 		return polyline;
 	}
 	
+	vector<ofPoint> toOf(const vector<cv::Point>& src) {
+		vector<ofPoint> ret(src.size());
+		cv::Point p;
+		for(int i=0; i!=src.size();++i) {
+			p = src.at(i);
+			ret.push_back(ofPoint(p.x, p.y));
+		}
+		return ret;
+	}
+
 	float getMaxVal(int depth) {
 		switch(depth) {
 			case CV_8U: return numeric_limits<uint8_t>::max();
