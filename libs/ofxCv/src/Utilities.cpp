@@ -70,6 +70,7 @@ namespace ofxCv {
             p = src.at(i);
             ret.push_back(ofPoint(p.x, p.y));
         }
+
         return ret;
     }
 	
