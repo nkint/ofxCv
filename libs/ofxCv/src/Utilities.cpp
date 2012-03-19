@@ -62,7 +62,6 @@ namespace ofxCv {
 		ofPolyline polyline = toOf(corners);
 		return polyline;
 	}
-<<<<<<< HEAD
 
     vector<ofPoint> toOf(const vector<cv::Point>& src) {
         vector<ofPoint> ret(src.size());
@@ -73,8 +72,6 @@ namespace ofxCv {
         }
         return ret;
     }
-=======
->>>>>>> parent of 70023bc... added vector<ofPoint> toOf(vector<cv::Point>)
 	
 	float getMaxVal(int depth) {
 		switch(depth) {
