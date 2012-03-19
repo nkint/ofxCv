@@ -6,7 +6,6 @@ using namespace cv;
 void testApp::setup() {
 }
 
-
 void testApp::update() {
 }
 
