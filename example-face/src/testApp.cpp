@@ -33,13 +33,6 @@ void testApp::update() {
 			//CascadeClassifier::FIND_BIGGEST_OBJECT |
 			//CascadeClassifier::DO_ROUGH_SEARCH |
 			0);
-
-        if(objects.size()==1) {
-            cout << "one face" << endl;
-
-            // extrace face ROI
-            //Mat image = cam.
-        }
 	}
 }
 

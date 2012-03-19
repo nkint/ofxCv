@@ -8,9 +8,6 @@
 #include "ofMain.h"
 #include "opencv2/opencv.hpp"
 
-#include "ofImage.h"
-#include "ofConstants.h"
-
 namespace ofxCv {
 	
 	using namespace cv;
@@ -60,7 +57,7 @@ namespace ofxCv {
 	void toOf(Mat mat, ofPixels_<T>& pixels) {
 		pixels.setFromExternalPixels(mat.ptr<T>(), mat.cols, mat.rows, mat.channels());
 	}
-
+	
 	// these functions are for accessing Mat, ofPixels and ofImage consistently.
 	// they're very important for imitate().
 	
