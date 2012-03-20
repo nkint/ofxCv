@@ -57,6 +57,7 @@ namespace ofxCv {
 	void toOf(Mat mat, ofPixels_<T>& pixels) {
 		pixels.setFromExternalPixels(mat.ptr<T>(), mat.cols, mat.rows, mat.channels());
 	}
+	vector<ofPoint> toOf(const vector<cv::Point>& src);
 	
 	// these functions are for accessing Mat, ofPixels and ofImage consistently.
 	// they're very important for imitate().
