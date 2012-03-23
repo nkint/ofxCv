@@ -63,6 +63,14 @@ namespace ofxCv {
 		tex.draw(x, y, width, height);
 	}
 	
+	void drawMat(Mat& mat, float x, float y, float scale) {
+		ofPushMatrix();
+		ofTranslate(x, y);
+		ofScale(scale, scale, 0);
+		drawMat(mat, 0, 0);
+		ofPopMatrix();
+	}
+
 	void applyMatrix(const ofMatrix4x4& matrix) {
 		glMultMatrixf((GLfloat*) matrix.getPtr());
 	}

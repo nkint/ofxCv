@@ -22,6 +22,7 @@ namespace ofxCv {
 	
 	void drawMat(Mat& mat, float x, float y);
 	void drawMat(Mat& mat, float x, float y, float width, float height);
+	void drawMat(Mat& mat, float x, float y, float scale);
 	
 	//ofVec2f findMaxLocation(FloatImage& img);
 	ofVec2f findMaxLocation(Mat& mat);
