@@ -5,7 +5,7 @@ using namespace cv;
 
 void testApp::setup() {
 	cam.initGrabber(640, 480);
-	background.setLearningTime(900);
+	background.setLearningTime(5);
 	background.setThresholdValue(10);
 }
 

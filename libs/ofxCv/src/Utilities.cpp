@@ -72,6 +72,15 @@ namespace ofxCv {
         }
         return ret;
     }
+
+    ofPolyline toOf(const vector<cv::Point3f> & src) {
+        ofPolyline p;
+        p.resize(src.size());
+        for(int i = 0;i < src.size();i++){
+            p.addVertex(src[i].x, src[i].y, src[i].z);
+        }
+        return p;
+    }
 	
     
 	float getMaxVal(int depth) {

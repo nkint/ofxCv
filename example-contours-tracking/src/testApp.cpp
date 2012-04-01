@@ -7,7 +7,7 @@ void testApp::setup() {
 	ofSetVerticalSync(true);
 	ofBackground(0);
 	
-	movie.loadMovie("video.mov");
+	movie.loadMovie("fingers.mov");
 	movie.play();
 	
 	contourFinder.setMinAreaRadius(1);
